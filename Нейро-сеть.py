@@ -76,23 +76,6 @@ def learn(h):
                 for es in range(10):
                     if es != number:
                         wes[es][i] -= 0.1
-        """
-        if sigmoid(wes, e)[number] > 0.5:
-            for i in range(0, 1500):
-                if e[i] == 0:
-                    wes[number][i] *= 0.9
-                else:
-                    for es in range(10):
-                        if es!=number:
-                            wes[es][i] *= 0.9
-
-        else:
-            for i in range(0, 1500):
-                if e[i] == 0:
-                    wes[number][i] *= 0.9
-                else:
-                    wes[sigmoid(wes, e).index(max(sigmoid(wes, e)))][i] *= 0.9
-        """
 
 def en1(h):
     global number
